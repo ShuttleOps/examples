@@ -1,2 +1,2 @@
 # examples
-This repo contains sample applications packaged with Habitat.
+This repo contains sample applications packaged with Habitat.  < How to use this repo >
