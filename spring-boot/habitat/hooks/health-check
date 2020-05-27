@@ -1,0 +1,20 @@
+status_code="$(curl -s -o /dev/null -w "%{http_code}" "{{sys.ip}}:{{cfg.server.port}}/{{cfg.app_name}}/{{cfg.server.actuator_base_path}}{{cfg.server.health_check_endpoint}}")"
+
+# TODO: establish Spring Boot actuator-backed warning code (error code 1)
+
+rc=0
+
+case $status_code in
+    "200")
+  rc=0 ;; # ok
+    "503")
+  rc=2 ;; # critical
+    "404")
+  rc=3 ;; # unknown, actuator path is invalid
+    "500")
+  rc=3 ;; # unknown, returned by actuator
+    *)
+  rc=2 ;; # critical, the HTTP request to the Spring Boot Actuator failed
+esac
+
+exit $rc

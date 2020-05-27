@@ -1,0 +1,5 @@
+#!/bin/bash
+
+exec 2>&1
+
+exec {{pkgPathFor "core/jre8"}}/bin/java -jar {{cfg.java_opts}} -Dspring.profiles.active={{cfg.spring_active_profile}} {{pkg.path}}/{{pkg.name}}.jar --spring.config.location={{pkg.svc_config_path}}/,classpath:/application.properties,classpath:/application-{{cfg.spring_active_profile}}.properties

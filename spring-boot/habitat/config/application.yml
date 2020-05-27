@@ -1,0 +1,17 @@
+server:
+  port: {{cfg.server.port}}
+  version: {{pkg.ident}}
+management:
+  endpoint:
+    health:
+      show-details: always
+      status:
+        http-mapping:
+          up: 200
+          unknown: 500
+          down: 503
+  endpoints:
+    web:
+      base-path: "/private/actuator"
+      exposure:
+        include: health
