@@ -8,8 +8,9 @@
         <version>2.2.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>org.indellient</groupId>
-    <artifactId>spring-boot</artifactId>
+    <groupId>org.shuttleops</groupId>
+    <artifactId>sample-spring-app</artifactId>
+    <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>sample-spring-app</name>
     <description>Sample App for Spring Boot</description>
