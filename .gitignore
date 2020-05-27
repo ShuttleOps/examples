@@ -10,3 +10,7 @@ target/
 
 # Spring Boot
 *.iml
+
+# Chef Habitat
+
+results/
