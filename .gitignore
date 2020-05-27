@@ -7,3 +7,6 @@ bin/
 *.class
 gradle*
 target/
+
+# Spring Boot
+*.iml
