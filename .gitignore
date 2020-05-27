@@ -1,0 +1,5 @@
+# Java, Gradle
+
+bin/
+*.class
+gradle*
