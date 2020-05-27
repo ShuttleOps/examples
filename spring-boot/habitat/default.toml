@@ -1,2 +1,4 @@
+spring_active_profile = "default"
+
 [server]
 port = 8080
