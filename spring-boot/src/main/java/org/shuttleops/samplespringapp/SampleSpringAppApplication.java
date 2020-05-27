@@ -1,4 +1,4 @@
-package org.indellient.samplespringapp;
+package org.shuttleops.samplespringapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
