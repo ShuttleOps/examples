@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url('/fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: Roboto-Thin;
+	text-align: center;
+	
+	background: rgb(22,31,71);
+	background: -moz-linear-gradient(180deg, rgba(22,31,71,1) 0%, rgba(22,31,71,1) 0%, rgba(38,29,89,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(22,31,71,1) 0%, rgba(22,31,71,1) 0%, rgba(38,29,89,1) 100%);
+	background: linear-gradient(180deg, rgba(22,31,71,1) 0%, rgba(22,31,71,1) 0%, rgba(38,29,89,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161f47",endColorstr="#261d59",GradientType=1);
+}
+
+body h1.title {
+	color: white;
+}
+
+body h1.title span {
+	color: #59d1fc;
+}
+
+body a.link img {
+	width: 300px;
+}
+
+body .big-logo {
+	margin-top: 50px;
+}
