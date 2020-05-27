@@ -1,6 +1,6 @@
 server:
   port: {{cfg.server.port}}
-  version: {{pkg.ident}}
+  version: {{pkg.version}}
 management:
   endpoint:
     health:

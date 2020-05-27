@@ -22,7 +22,7 @@
 
 <body>
 	<div>
-		<h1 class="title">This is <span>sample-spring-app</span> built and deployed by</h1>
+		<h1 class="title">This is version <span th:text="${@environment.getProperty('server.version')}"></span> of <span>sample-spring-app</span> built and deployed by</h1>
 		<div>
 			<a class="link" href="https://shuttleops.io" target="_blank"><img th:src="@{/images/sho-logo.svg}" /></a>
 		</div>
