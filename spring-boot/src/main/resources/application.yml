@@ -1,8 +1,8 @@
 server:
-  port: {{cfg.server.port}}
-  version: {{pkg.version}}
+  port: 8081
+  version: local
 application:
-  unhealthy_seconds: {{cfg.application.unhealthy_seconds}}
+  unhealthy_seconds: 10
 management:
   endpoint:
     health:

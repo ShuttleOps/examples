@@ -2,3 +2,6 @@ spring_active_profile = "default"
 
 [server]
 port = 8080
+
+[application]
+unhealthy_seconds = 10
