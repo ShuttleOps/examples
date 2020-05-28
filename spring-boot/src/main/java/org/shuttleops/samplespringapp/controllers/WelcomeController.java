@@ -16,15 +16,16 @@ public class WelcomeController{
 	@Autowired
 	HealthToggle healthToggle;
 
-	@GetMapping("/")
-	public String index() {
+	@GetMapping( "/" )
+	public String index(){
 		return "index";
 	}
 
-	@GetMapping("/make-unhealthy")
+	@GetMapping( "/make-unhealthy" )
 	public String makeUnhealthy( Model model ){
-		healthToggle.setUnhealthy( Integer.parseInt(env.getProperty( "application.unhealthy_seconds" )) );
-		model.addAttribute( "message", "Health is now set to 'unhealthy'." );
+		int unhealthySeconds = Integer.parseInt( env.getProperty( "application.unhealthy_seconds" ) );
+		healthToggle.setUnhealthy( unhealthySeconds );
+		model.addAttribute( "message", String.format( "Health is now set to 'unhealthy' for %d seconds.", unhealthySeconds ) );
 		return "message";
 	}
 }
