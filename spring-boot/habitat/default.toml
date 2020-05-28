@@ -2,6 +2,7 @@ spring_active_profile = "default"
 
 [server]
 port = 8080
+actuator_base_path = "/private/actuator"
 
 [application]
 unhealthy_seconds = 10

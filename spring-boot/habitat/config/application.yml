@@ -14,6 +14,6 @@ management:
           down: 503
   endpoints:
     web:
-      base-path: "/private/actuator"
+      base-path: "{{cfg.server.actuator_base_path}}"
       exposure:
         include: health

@@ -1,4 +1,4 @@
-status_code="$(curl -s -o /dev/null -w "%{http_code}" "{{sys.ip}}:{{cfg.server.port}}/{{cfg.app_name}}/{{cfg.server.actuator_base_path}}{{cfg.server.health_check_endpoint}}")"
+status_code="$(curl -s -o /dev/null -w "%{http_code}" "{{sys.ip}}:{{cfg.server.port}}{{cfg.server.actuator_base_path}}/health")"
 
 # TODO: establish Spring Boot actuator-backed warning code (error code 1)
 
