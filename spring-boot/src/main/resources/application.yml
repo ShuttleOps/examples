@@ -3,6 +3,7 @@ server:
   version: local
 application:
   unhealthy_seconds: 10
+  ipv4: 127.0.0.1
 management:
   endpoint:
     health:

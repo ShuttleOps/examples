@@ -3,6 +3,7 @@ server:
   version: {{pkg.version}}
 application:
   unhealthy_seconds: {{cfg.application.unhealthy_seconds}}
+  ipv4: {{sys.ip}}
 management:
   endpoint:
     health:
